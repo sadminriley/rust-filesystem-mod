@@ -14,3 +14,12 @@ Loaded File contents: Goodbye, Python!
 - Create a temporary file/directory
 - Created nested directories
 - use drop() to delete all files used in tmpfs
+
+
+Drop could be like this in code:
+```
+drop(temp_dir);
+
+
+assert!(!temp_dir.path().exists());
+```
