@@ -6,7 +6,6 @@ mod filesystem_module {
 use filesystem_module::filesystem;
 use std::io::Write;
 use std::fs;
-//use assert_fs::fixture::*;
 use assert_fs::prelude::*;
 
 fn main() {
