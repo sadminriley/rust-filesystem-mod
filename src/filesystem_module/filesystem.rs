@@ -1,7 +1,5 @@
-use assert_fs::prelude::*;
 use std::io::Write;
 use std::fs;
-use tempfile::tempdir;
 
 
 // public module fn
