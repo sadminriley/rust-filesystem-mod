@@ -34,3 +34,23 @@ fn main() {
     let file_contents = fs::read_to_string(&file_path).expect("Failed to read file");
     println!("Loaded File contents: {}", file_contents);
 } 
+
+
+fn delete_path(path: &std::path::Path) -> std::io::Result<()> {
+    /* 
+    Possible usage case(???)
+    delete_path(&directory_path)
+    let directory_path = std::path::Path::new("/foobar/dir");
+     if let Err(err) = delete_path(&directory_path) {
+        eprintln!("Error deleting directory: {}", err);
+    }
+    */
+
+    if path.exists() {
+        fs::remove_dir_all(path)?;
+        println!("Deleted {:?}", path);
+    } else {
+        println!("Path {:?} Not found!", path)
+    }
+    Ok(())
+    }
