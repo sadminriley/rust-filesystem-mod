@@ -8,3 +8,9 @@ $ cargo run
 File system created!
 Loaded File contents: Goodbye, Python!
 ```
+
+## Ideas for functionality
+- Write to file
+- Create a temporary file/directory
+- Created nested directories
+- use drop() to delete all files used in tmpfs
